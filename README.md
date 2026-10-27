@@ -8,7 +8,7 @@ Quick reference for a **1920×1080 / 165 Hz** setup, mainly **NM** with occasion
 | --- | --- |
 | Display | Fullscreen · 1920×1080 · 165 Hz |
 | Renderer / threading | Automatic / Multithreaded |
-| Frame limiter | **4× refresh rate** (~660 FPS at 165 Hz) |
+| Frame limiter | **8× refresh rate** (~660 FPS at 165 Hz) |
 | UI scale / screen scaling | 1× / Disabled |
 
 **Check:** 4× is a starting point. Compare 8× or *Basically unlimited* if frame times or responsiveness improve; avoid VSync for lowest-latency play.
