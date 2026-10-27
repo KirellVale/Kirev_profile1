@@ -56,7 +56,7 @@ Quick reference for a **1920×1080 / 165 Hz** setup, mainly **NM** with occasion
 
 ## Skin & important notes
 
-- Combo colours: **green → red → yellow → blue** (optional purple).
+- Combo colours: **green → red → yellow → blue**.
 - Use `@2x` for double-resolution assets: `cursor@2x.png`, `followpoint-3@2x.png`, etc.
 - After changing cursor, sliders, hitcircles, or input, test dense patterns in **NM and Hidden**.
 - Change one performance or audio setting at a time; don't chase theoretical latency gains at the expense of stability.
