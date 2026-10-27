@@ -1,171 +1,65 @@
-# osu!standard — Personal Competitive Skin & Settings
+# osu!lazer — Competitive Setup (osu!standard)
 
-A personal osu!lazer setup focused on **readability, timing accuracy, consistency, and low visual noise**. The skin uses a minimal **UI** outside gameplay and prioritizes competitive clarity during gameplay.
+Quick reference for a **1920×1080 / 165 Hz** setup, mainly **NM** with occasional **Hidden**. Priorities: readability, consistent timing, and minimal distractions.
 
-> **Personal-use project.** This repository is a customization workspace, not an official osu! project. Settings below are the agreed configuration targets from our optimization process, not a claim that every recommendation was applied or benchmarked.
+## Graphics
 
-## Setup
-
-| Item | Configuration |
+| Setting | Value |
 | --- | --- |
-| Client | osu!lazer |
-| Ruleset | **osu!standard only** |
-| Play style | No Mod (NM) primarily, Hidden (HD) occasionally |
-| Display resolution | 1920 × 1080 |
-| Monitor | 180 Hz capable, **165 Hz selected** |
+| Display | Fullscreen · 1920×1080 · 165 Hz |
+| Renderer / threading | Automatic / Multithreaded |
+| Frame limiter | **4× refresh rate** (~660 FPS at 165 Hz) |
+| UI scale / screen scaling | 1× / Disabled |
 
-## 1. Graphics and performance
+**Check:** 4× is a starting point. Compare 8× or *Basically unlimited* if frame times or responsiveness improve; avoid VSync for lowest-latency play.
 
-| Setting | Recommended configuration |
+## Input
+
+| Setting | Value |
 | --- | --- |
-| Screen mode | Fullscreen |
-| Resolution | 1920 × 1080 |
-| Display refresh rate | 165 Hz (current Windows/display setting) |
-| Minimize on focus loss | Off |
-| UI scale | 1.0× |
-| Screen scaling | Disabled |
-| Renderer | Automatic (keep unless troubleshooting) |
-| Frame limiter | **8× refresh rate** |
-| Threading mode | Multithreaded |
-| Show FPS | On while checking stability; optional afterward |
-| Hardware video acceleration | Off if videos are disabled/not used |
-| Screenshot format | PNG (lossless) |
-| Include menu cursor in screenshots | Off |
+| High-precision mouse | On for mouse; test with tablet drivers |
+| Mouse sensitivity | Keep familiar setting (previously 1.2×) |
+| Confine cursor | During gameplay |
+| Disable mouse clicks / wheel volume | On when tapping with keyboard / On |
+| Cursor size / auto-size | **0.4×** with current asset / Off |
+| Disable Windows key in-game | On |
+| First object visibility with visual mods | On (Hidden) |
 
-**FPS note:** 4× is the recommended starting point, **not a proven universal minimum-latency setting**. Compare frame-time stability against 8× or *Basically unlimited* only if needed. Avoid VSync when minimizing input latency is the priority.
+**Check:** Tablet area and pen sensitivity must be set in your tablet software or tablet settings, not via mouse sensitivity.
 
-## 2. Input
+## Gameplay & HUD
 
-| Setting | Configuration / guidance |
+| Setting | Value |
 | --- | --- |
-| High-precision mouse | On **for mouse play**; check tablet-driver compatibility before applying |
-| Mouse sensitivity | 1.2× was shown in settings; retain familiar sensitivity rather than changing it blindly |
-| Confine mouse to window | During gameplay |
-| Disable mouse-wheel volume adjustment | **On (recommended change)** |
-| Disable mouse clicks during gameplay | On **if using keyboard keys for tapping** |
-| Gameplay cursor size | **0.4×**, visually validated with the revised cursor; recheck if asset changes |
-| Automatic cursor size by beatmap | Off |
-| Show cursor with touch input | Off when not using touch |
-| Disable Windows key during gameplay | **On (recommended change)** |
-| Increase first-object visibility with visual mods | **On (recommended for Hidden)** |
-
-**Tablet note:** Tablet area, pen pressure, and sensitivity must be calibrated in the relevant tablet/driver section. Mouse sensitivity does not substitute for tablet calibration.
-
-## 3. Audio and timing
-
-| Setting | Configuration / guidance |
-| --- | --- |
-| Legacy audio mode | Was enabled in the captured settings; **test non-legacy audio**, retaining whichever is stable and synchronized |
-| Master volume | 100% |
-| Volume when unfocused | 1% |
-| Effects / hitsounds volume | 30% current; **40% is an optional comparison**, not confirmed |
-| Music volume | 30% |
-| Global audio offset | **0 ms** unless an actual consistent offset is measured |
-| Positional/stereo separation of hitsounds | Off |
-| Always play first combo-break sound | Off |
-
-Optimized hitsounds were prepared for hit normals, claps, finishes, whistles, slider ticks, and selected spinner events. Continuous slider sounds and unnecessary notifications were intentionally kept quiet.**
-
-Do **not** adjust global offset or switch audio modes based on assumptions alone: test against actual timing and audio stability.
-
-## 4. Gameplay — visuals and beatmap content
-
-| Setting | Recommended configuration |
-| --- | --- |
-| Score display mode | Standardised |
-| Hit lighting | Off |
-| Star fountains | Off |
-| Background dim | **90%** |
-| Background blur | **0%** |
-| Brighten during breaks | **Off (recommended change)** |
-| Turn playfield red when health is low | Off |
-| Beatmap skins | Off |
-| Beatmap combo colours | Off — use skin colours |
-| Beatmap hitsounds | Off — use skin samples |
+| Background dim / blur | **90% / 0%** |
+| Hit lighting / star fountains | Off / Off |
+| Brighten during breaks / low-health red tint | Off / Off |
+| Beatmap skins / colours | Off / Off |
+| Beatmap hitsounds | Off for consistent skin audio¹ |
 | Storyboards / videos | Off |
-| Combo-colour normalisation | **0%** |
+| Combo colour normalisation | 0% |
+| HUD | Always visible; leaderboard and extra key overlay Off |
+| Cursor ripples / built-in trail effects | Off / Off |
+| Slider snaking | In: On; Out: preference |
 
-### osu!standard-specific visuals
+¹ Beatmap hitsounds are mapper-authored. Turn them back on if you want the intended audio design.
 
-| Setting | Configuration / guidance |
+## Audio
+
+| Setting | Value |
 | --- | --- |
-| Snaking in sliders | On |
-| Snaking out of sliders | On was validated; optionally compare Off for less motion |
-| Hit animations | On, as validated; reduce only if they prove distracting |
-| Cursor trail | Off in client effects (custom assets remain separately controlled) |
-| Cursor ripples | Off |
-| Playfield border style | Corners |
+| Output | Selected USB DAC / headphones |
+| Master / music / effects | **100% / 30% / 30%**, adjust to comfort |
+| Positional hitsound separation | Off |
+| Audio offset | **0 ms** unless measured otherwise |
+| Legacy audio | Keep whichever mode is stable and synchronized |
 
-## 5. HUD
+## Skin & important notes
 
-| Setting | Recommended configuration |
-| --- | --- |
-| HUD visibility | Always |
-| Replay settings overlay | Off |
-| Always show key overlay | Off |
-| Always show gameplay leaderboard | Off |
-| Require holding a key to pause | Optional safety preference |
-| Always show menu button | Off |
-| Show health bar when failing is impossible | Off |
+- Combo colours: **green → red → yellow → blue** (optional purple).
+- Use `@2x` for double-resolution assets: `cursor@2x.png`, `followpoint-3@2x.png`, etc.
+- Keep `skin.ini` **`Version: 2.2`**: this is the skin format, not the project version.
+- After changing cursor, sliders, hitcircles, or input, test dense patterns in **NM and Hidden**.
+- Change one performance or audio setting at a time; don't chase theoretical latency gains at the expense of stability.
 
-The HUD layout was simplified by removing the extra live from `MainHUDComponents.json`, keeping essential gameplay information.
-
-## 6. User interface
-
-### General and main menu
-
-| Setting | Configuration |
-| --- | --- |
-| Rotate cursor when dragging | Off |
-| Menu cursor size | 0.5× |
-| Menu parallax | Off |
-| Hold-to-confirm delay | 0 ms |
-| Menu tips | Off |
-| Interface voices | Off |
-| osu! theme music | Off |
-| Intro animation | Circles (cosmetic; optional) |
-| Menu background source | Skin |
-| Seasonal backgrounds | **Off recommended** (captured value was Sometimes) |
-
-### Song Select
-
-| Setting | Configuration |
-| --- | --- |
-| Show converted beatmaps | Off |
-| Random selection algorithm | Never repeat |
-| Mod-select shortcut style | Sequential |
-| Auto-focus mod search field | Off shown; personal preference |
-| Song Select background blur | Off |
-
-
-## 7. Debug and maintenance
-
-| Setting | Guidance |
-| --- | --- |
-| Garbage collector (GC) mode | **Default** |
-| Clear all caches | Only for troubleshooting, not regular optimization |
-| Renderer and audio troubleshooting | Change one option at a time and compare gameplay stability |
-
-## Skin implementation notes
-
-- **Colour order:** green, red, yellow, blue; optional fifth purple. Prioritize distinctness over aesthetics.
-- **UI style:**minimal and readable.
-- **Gameplay style:** low clutter; clean hitcircles, cursor, slider-follow ring, follow points, and spinner indicators.
-- **Image naming:** double-resolution assets must have `@2x` **before `.png`**, e.g. `cursor@2x.png` and `followpoint-3@2x.png`.
-- **`skin.ini` `Version: 2.2`:** the **legacy skinning format version**, not the custom project's release version. Do not increment it to version the project.
-- **Skin metadata:** `skin.ini` holds `Name` and `Author`; osu!lazer also stores skin metadata in `skininfo.json`.
-- **Distribution:** the intended use is personal. Do not assume original/remixed third-party assets are licensed for redistribution.
-
-## Validation checklist
-
-- [x] Personal visual check of the revised cursor and gameplay appearance in osu!lazer
-- [x] Resolution and `@2x` naming review reported complete
-- [ ] Confirm recommended toggles that were not shown again after changes
-- [ ] Compare 4× FPS limit with alternatives only if frame pacing is unstable
-- [ ] Compare legacy/non-legacy audio if changing audio mode
-- [ ] Retest No Mod and Hidden after any future skin or input change
-
-### References
-
-- [osu! Skinning FAQ — high-resolution assets](https://osu.ppy.sh/wiki/en/Skinning/FAQ)
-- [osu!lazer source code](https://github.com/ppy/osu)
+*Personal baseline, not a universal performance preset.*
