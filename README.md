@@ -1,8 +1,8 @@
 # osu!standard — Personal Competitive Skin & Settings
 
-A personal osu!lazer setup focused on **readability, timing accuracy, consistency, and low visual noise**. The skin uses a minimal **black-and-pink UI** outside gameplay and prioritizes competitive clarity during gameplay.
+A personal osu!lazer setup focused on **readability, timing accuracy, consistency, and low visual noise**. The skin uses a minimal **UI** outside gameplay and prioritizes competitive clarity during gameplay.
 
-> **Personal-use project.** This repository is a customization workspace, not an official osu! project. Settings below are the agreed configuration targets from our optimization process, not a claim that every recommendation was applied or benchmarked on the PC.
+> **Personal-use project.** This repository is a customization workspace, not an official osu! project. Settings below are the agreed configuration targets from our optimization process, not a claim that every recommendation was applied or benchmarked.
 
 ## Setup
 
@@ -13,8 +13,6 @@ A personal osu!lazer setup focused on **readability, timing accuracy, consistenc
 | Play style | No Mod (NM) primarily, Hidden (HD) occasionally |
 | Display resolution | 1920 × 1080 |
 | Monitor | 180 Hz capable, **165 Hz selected** |
-| Skin | Customized legacy skin (`doki_mix_3` was the working name) |
-| Output audio device | TOPPING USB DAC |
 
 ## 1. Graphics and performance
 
@@ -27,7 +25,7 @@ A personal osu!lazer setup focused on **readability, timing accuracy, consistenc
 | UI scale | 1.0× |
 | Screen scaling | Disabled |
 | Renderer | Automatic (keep unless troubleshooting) |
-| Frame limiter | **4× refresh rate** — approximately **660 FPS** at 165 Hz |
+| Frame limiter | **8× refresh rate** |
 | Threading mode | Multithreaded |
 | Show FPS | On while checking stability; optional afterward |
 | Hardware video acceleration | Off if videos are disabled/not used |
@@ -57,7 +55,6 @@ A personal osu!lazer setup focused on **readability, timing accuracy, consistenc
 
 | Setting | Configuration / guidance |
 | --- | --- |
-| Output device | TOPPING USB DAC |
 | Legacy audio mode | Was enabled in the captured settings; **test non-legacy audio**, retaining whichever is stable and synchronized |
 | Master volume | 100% |
 | Volume when unfocused | 1% |
@@ -67,7 +64,7 @@ A personal osu!lazer setup focused on **readability, timing accuracy, consistenc
 | Positional/stereo separation of hitsounds | Off |
 | Always play first combo-break sound | Off |
 
-Optimized hitsounds were prepared for hit normals, claps, finishes, whistles, slider ticks, and selected spinner events. Continuous slider sounds and unnecessary notifications were intentionally kept quiet. **`failsound.wav` and `applause.wav` were intentionally preserved.**
+Optimized hitsounds were prepared for hit normals, claps, finishes, whistles, slider ticks, and selected spinner events. Continuous slider sounds and unnecessary notifications were intentionally kept quiet.**
 
 Do **not** adjust global offset or switch audio modes based on assumptions alone: test against actual timing and audio stability.
 
@@ -111,7 +108,7 @@ Do **not** adjust global offset or switch audio modes based on assumptions alone
 | Always show menu button | Off |
 | Show health bar when failing is impossible | Off |
 
-The HUD layout was simplified by removing the extra live **rank display** from `MainHUDComponents.json`, keeping essential gameplay information.
+The HUD layout was simplified by removing the extra live from `MainHUDComponents.json`, keeping essential gameplay information.
 
 ## 6. User interface
 
@@ -140,7 +137,6 @@ The HUD layout was simplified by removing the extra live **rank display** from `
 | Auto-focus mod search field | Off shown; personal preference |
 | Song Select background blur | Off |
 
-The minimal `SongSelect.json` visual accent was adjusted to avoid overlapping song titles; the native osu!lazer interface remains largely controlled by the client.
 
 ## 7. Debug and maintenance
 
@@ -153,7 +149,7 @@ The minimal `SongSelect.json` visual accent was adjusted to avoid overlapping so
 ## Skin implementation notes
 
 - **Colour order:** green, red, yellow, blue; optional fifth purple. Prioritize distinctness over aesthetics.
-- **UI style:** black and pink, minimal and readable.
+- **UI style:**minimal and readable.
 - **Gameplay style:** low clutter; clean hitcircles, cursor, slider-follow ring, follow points, and spinner indicators.
 - **Image naming:** double-resolution assets must have `@2x` **before `.png`**, e.g. `cursor@2x.png` and `followpoint-3@2x.png`.
 - **`skin.ini` `Version: 2.2`:** the **legacy skinning format version**, not the custom project's release version. Do not increment it to version the project.
@@ -166,7 +162,7 @@ The minimal `SongSelect.json` visual accent was adjusted to avoid overlapping so
 - [x] Resolution and `@2x` naming review reported complete
 - [ ] Confirm recommended toggles that were not shown again after changes
 - [ ] Compare 4× FPS limit with alternatives only if frame pacing is unstable
-- [ ] Compare legacy/non-legacy audio on the TOPPING USB DAC if changing audio mode
+- [ ] Compare legacy/non-legacy audio if changing audio mode
 - [ ] Retest No Mod and Hidden after any future skin or input change
 
 ### References
