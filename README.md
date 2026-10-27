@@ -1,6 +1,6 @@
 ## Credits & Disclaimer
 
-This project is a personal modification of **doki_mix_3**, originally credited to **DDK RPK** in the source skin's `skin.ini`.
+This project is a personal modification of **doki_mix_3**, originally credited to **DDK RPK**.
 
 The skin has been customized and refined for personal use in osu!lazer, with adjustments to visuals, sounds, readability, and competitive gameplay.
 
