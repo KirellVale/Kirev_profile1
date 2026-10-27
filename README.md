@@ -8,7 +8,7 @@ Quick reference for a **1920×1080 / 165 Hz** setup, mainly **NM** with occasion
 | --- | --- |
 | Display | Fullscreen · 1920×1080 · 165 Hz |
 | Renderer / threading | Automatic / Multithreaded |
-| Frame limiter | **8× refresh rate** (~660 FPS at 165 Hz) |
+| Frame limiter | **8× refresh rate** (~1000 FPS at 165 Hz) |
 | UI scale / screen scaling | 1× / Disabled |
 
 **Check:** 4× is a starting point. Compare 8× or *Basically unlimited* if frame times or responsiveness improve; avoid VSync for lowest-latency play.
@@ -18,7 +18,7 @@ Quick reference for a **1920×1080 / 165 Hz** setup, mainly **NM** with occasion
 | Setting | Value |
 | --- | --- |
 | High-precision mouse | On for mouse; test with tablet drivers |
-| Mouse sensitivity | Keep familiar setting (previously 1.2×) |
+| Mouse sensitivity | Keep familiar setting (1.2×) |
 | Confine cursor | During gameplay |
 | Disable mouse clicks / wheel volume | On when tapping with keyboard / On |
 | Cursor size / auto-size | **0.4×** with current asset / Off |
@@ -58,7 +58,6 @@ Quick reference for a **1920×1080 / 165 Hz** setup, mainly **NM** with occasion
 
 - Combo colours: **green → red → yellow → blue** (optional purple).
 - Use `@2x` for double-resolution assets: `cursor@2x.png`, `followpoint-3@2x.png`, etc.
-- Keep `skin.ini` **`Version: 2.2`**: this is the skin format, not the project version.
 - After changing cursor, sliders, hitcircles, or input, test dense patterns in **NM and Hidden**.
 - Change one performance or audio setting at a time; don't chase theoretical latency gains at the expense of stability.
 
