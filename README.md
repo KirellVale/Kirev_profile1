@@ -1,3 +1,15 @@
+## Credits & Disclaimer
+
+This project is a personal modification of **doki_mix_3**, originally credited to **DDK RPK** in the source skin's `skin.ini`.
+
+The skin has been customized and refined for personal use in osu!lazer, with adjustments to visuals, sounds, readability, and competitive gameplay.
+
+**All credit for the original skin and any third-party assets belongs to their respective creators.** I do not claim ownership of the original content.
+
+This is an unofficial, non-commercial fan customization and is not affiliated with or endorsed by the original creators or osu!.
+
+Original assets remain subject to their respective copyright and licensing terms. Attribution does not imply permission to redistribute them.
+
 # osu!lazer — Competitive Setup (osu!standard)
 
 Quick reference for a **1920×1080 / 165 Hz** setup, mainly **NM** with occasional **Hidden**. Priorities: readability, consistent timing, and minimal distractions.
