@@ -12,7 +12,7 @@ Original assets remain subject to their respective copyright and licensing terms
 
 # osu!lazer — Competitive Setup (osu!standard)
 
-Quick reference for a **1920×1080 / 165 Hz** setup, mainly **NM** with occasional **Hidden**. Priorities: readability, consistent timing, and minimal distractions.
+Quick reference for a **1920×1080 / 165 Hz** whit keyboard and mouse setup, mainly **NM** with occasional **Hidden**. Priorities: readability, consistent timing, and minimal distractions.
 
 ## Graphics
 
